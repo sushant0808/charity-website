@@ -1,0 +1,746 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------STYLING HEADER SECTION------------------------------ */
+.header-section {
+    position: fixed;
+    z-index: 1000;
+}
+
+.header {
+    background-color: #5BC0AB;
+}
+
+.navigation {
+    background-color: white;
+}
+
+.location-text,
+.email-text {
+    font-size: 14px;
+}
+
+.header-location-icon i,
+.header-email-icon i {
+    font-size: 14px;
+}
+
+.header-social-media-icons {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+}
+
+.donate-btn {
+    border-radius: 100px;
+    padding: 8px 30px;
+    border-color: #8b8b8b !important;
+}
+
+.donate-btn:hover {
+    color: white;
+    background-color: #5BC0AB;
+    border-color: #5BC0AB !important;
+}
+
+.navigation-links {
+    color: #717275;
+    font-weight: 500;
+}
+
+
+.navigation-links:focus {
+    color: #5ABFAA !important;
+}
+
+.navigation-links:hover {
+    color: #5BC0AB;
+}
+
+.logo-title {
+    color: #5ABFAA;
+    font-size: 22px;
+}
+
+/* ------------------------------STYLING MAIN CONTENT SECTION------------------------------ */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    background-size: 60% 60%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #5BC0AB !important;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: red !important;
+}
+
+.main-content-section-options-card {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.4s, border-radius 0.1s;
+}
+
+.main-content-section-options-card:hover {
+    box-shadow: 5px 5px 30px rgb(199, 199, 199);
+    border-radius: 5%;
+}
+
+/* Applying transition on card option images */
+.main-content-section-options-card img {
+    transition: all 0.4s;
+}
+
+.main-content-section-options-card:hover img {
+    /* transition: all 0.4s; */
+    transform: scale(0.8)
+}
+
+.main-content-section-options-card p {
+    margin-top: 20px;
+    font-size: 23px;
+    color: #5BC1AC;
+    transition: all 0.4s;
+}
+
+.main-content-section-options-card:hover p {
+    transform: translateY(-15px);
+}
+
+.main-content-section-stats-left-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.main-content-section-stats-div {
+    background-color: #f0f8ff;
+}
+
+.right-side-stats-first-div-main-title {
+    color: #5A6F80;
+    font-size: 42px;
+}
+
+.right-side-stats-first-div-subtitle {
+    color: #5BC1AC;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.right-side-stats-first-div-text,
+.right-side-stats-second-div-subtitle {
+    color: #8C8182;
+}
+
+.right-side-stats-first-div,
+.right-side-stats-second-div,
+.right-side-stats-third-div {
+    background-color: white;
+    padding: 25px 35px;
+    border-radius: 20px;
+}
+
+.stats-container {
+    /* padding: 70px 0px; */
+}
+
+.right-side-stats-second-div-main-title {
+    color: #5BC1AC;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.our-mission-points span:first-child {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #F0F8FF;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #5A6F80;
+}
+
+.right-side-stats-third-div-stats p:first-child {
+    color: #5ABFAA;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.right-side-stats-third-div-stats p:last-child {
+    color: #5A6F80;
+}
+
+.main-content-section-partner-left-side img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.partner-name {
+    font-size: 40px;
+    color: #5A6F80;
+    font-weight: 500;
+}
+
+.partner-text,
+.partner-role {
+    color: #5A6F80;
+}
+
+.partner-social-icons {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #44525D;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.partner-social-icons i {
+    color: white;
+}
+
+.partner-social-icons:hover {
+    background-color: #5ABFAA;
+}
+
+.main-content-section-volunteer-div {
+    background-color: #F0F8FF;
+    padding: 100px 0;
+}
+
+.voluteer-left-div h2 {
+    color: #5A6F80;
+    font-size: 45px;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.volunteer-right-div div:first-child a {
+    text-decoration: none;
+    color: #807676;
+}
+
+.volunteer-right-div button {
+    /* width: 230px;
+    height: 50px; */
+    background-color: #5A6F80;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.3s;
+    font-size: 20px;
+    padding: 12px 30px;
+}
+
+.volunteer-right-div button:hover {
+    background-color: #5BB9A8;
+}
+
+/* 
+.volunteer-container::after{
+    content: '';
+} */
+
+.main-content-section-volunteer-div {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-content-section-volunteer-div::before {
+    content: "";
+    background-color: #5BC1AC;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: -30px;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    z-index: 9;
+}
+
+.main-content-section-volunteer-div::after {
+    content: "";
+    border: 20px solid #597081;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+/* ------------------------------STYLING MAIN OUR CAUSES SECTION------------------------------ */
+.causes-card {
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.causes-card:hover {
+    /* box-shadow: 5px 5px 10px rgb(167, 167, 167); */
+    -webkit-box-shadow: 0 0 20px rgb(153, 153, 153);
+    box-shadow: 0 0 15px rgb(153, 153, 153);
+}
+
+.causes-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.causes-title {
+    font-size: 25px;
+    color: #5BC1AC;
+}
+
+.causes-desc {
+    color: #717275;
+}
+
+.causes-btn {
+    background-color: #5A6F80;
+    transition: all 0.3s;
+    text-decoration: none;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+.causes-btn:hover {
+    background-color: #5BC1AC;
+}
+
+/* ------------------------------STYLING BECOME VOLUNTEER SECTION------------------------------ */
+.become-volunteer-section {
+    background-color: #5A6F80;
+    padding: 90px 0;
+}
+
+/* .become-volunteer-form{
+    background-color: pink;
+} */
+
+.become-volunteer-form-input {
+    padding: 13px 0;
+    border-radius: 9px;
+    border: none;
+    background-color: #eaf5ff;
+    padding-left: 10px;
+}
+
+.become-volunteer-form-input:focus {
+    border: none;
+    outline: none;
+}
+
+.become-volunteer-btn {
+    border-radius: 100px;
+    padding: 10px 0;
+    background-color: #597081;
+    transition: all 0.3s;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.become-volunteer-btn:hover {
+    background-color: #5BC1AC;
+}
+
+.become-volunteer-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ------------------------------STYLING LATEST NEWS SECTION------------------------------ */
+.donation-img-div img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.latest-new-section-title {
+    margin-bottom: 50px;
+    font-size: 45px;
+    color: #5A6F80;
+    font-weight: 500;
+}
+
+.donation-info div {
+    margin: 15px 45px 15px 0;
+    color: #7A7287;
+}
+
+.donation-title {
+    font-size: 30px;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.donation-title:hover {
+    color: #5ABFAA;
+}
+
+.donation-desc {
+    color: rgb(129, 129, 129);
+}
+
+.recent-news-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.recent-news-img {
+    border-radius: 10px;
+}
+
+.news-categories {
+    list-style: none;
+    padding: 0;
+}
+
+.news-categories-div a {
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    margin-bottom: 10px;
+}
+
+.news-category-count {
+    display: inline-flex;
+    justify-content: center;
+    width: 30px;
+    color: white;
+    background-color: #5d6e7a;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+.news-tags {
+    border-radius: 100px;
+    border: 1px solid rgb(221, 220, 220);
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    transition: all 0.3s;
+    color: rgb(131, 131, 131);
+    cursor: pointer;
+}
+
+.news-tags:hover {
+    border: 1px solid black;
+}
+
+.newsletter-input {
+    padding: 15px;
+}
+
+.newsletter-form {
+    margin-top: 30px;
+    padding: 1px 30px;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+}
+
+.subscribe-btn {
+    background-color: #597081;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+    color: white;
+    padding: 10px 0;
+    border-radius: 100px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.subscribe-btn:hover {
+    background-color: #5ABFAA;
+}
+
+/* ------------------------------STYLING CONTACT FORM SECTION------------------------------ */
+
+.contact-left-div h2 {
+    color: #5A6F80;
+    font-size: 45px;
+}
+
+.hr-img-div {
+    border-radius: 50%;
+}
+
+.hr-img-div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hr-name,
+.hr-work,
+.contact-us-info {
+    color: #757679;
+}
+
+.contact-info-text {
+    color: #5BC1AC;
+}
+
+.get-direction-btn,
+.send-message-btn {
+    background-color: #5A6F80;
+    color: white;
+    border-radius: 100px;
+    padding: 10px 25px;
+    margin: 20px 0;
+    transition: all 0.3;
+}
+
+.get-direction-btn:hover,
+.send-message-btn:hover {
+    background-color: #5ABFAA;
+    color: white;
+}
+
+.contact-form-title {
+    font-size: 45px;
+}
+
+.send-message-btn {
+    border-radius: 100px;
+    padding: 13px 0;
+}
+
+.contact-form-inputs {
+    padding: 12px;
+}
+
+/* STYLING THE FOOTER SECTION */
+.footer-section {
+    background-color: #44525D;
+    margin-top: 100px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-contact-info {
+    font-size: 18px;
+}
+
+/* @media only screen and (min-width: 200px) and (max-width: 984px) {
+    body {
+        background-color: red !important;
+    }
+} */
+
+/* Media queries */
+@media only screen and (max-width: 984px) {
+    /* body {
+        background-color: red !important;
+    } */
+
+    .right-side-stats-first-div-main-title {
+        font-size: 34px;
+    }
+
+    .right-side-stats-first-div-subtitle {
+        font-size: 20px;
+    }
+
+    .right-side-stats-second-div-main-title {
+        font-size: 24px;
+    }
+
+    .our-causes-title {
+        font-size: 38px !important;
+    }
+
+    .latest-new-section-title {
+        font-size: 36px;
+    }
+
+    .contact-us-title {
+        font-size: 40px !important;
+    }
+
+    .get-in-touch-text {
+        font-size: 35px !important;
+    }
+
+    .contact-info-text {
+        font-size: 26px !important;
+    }
+
+    .contact-form-title {
+        font-size: 40px;
+    }
+
+    .quick-links-text,
+    .footer-contact-info {
+        font-size: 20px;
+    }
+
+    .footer-links,
+    .footer-contact-info {
+        font-size: 14px;
+    }
+
+    .partner-text {
+        width: 100% !important;
+    }
+
+    .main-content-section-partner-left-side img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .causes-card {
+        width: 30rem !important;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .carousel-action-icons {
+        display: inline-block !important;
+        width: 45px !important;
+        padding: 1.3rem;
+    }
+
+    .carousel-div {
+        /* background-color: red; */
+        height: 40vh !important;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .right-side-stats-first-div-main-title {
+        font-size:24px;
+    }
+
+    .right-side-stats-first-div-subtitle {
+        font-size: 18px;
+    }
+
+    .right-side-stats-second-div-main-title {
+        font-size: 24px;
+    }
+
+    .partner-name{
+        font-size: 28px;
+    }
+
+    .partner-text{
+        font-size: 14px;
+    }
+
+    .voluteer-left-div h2{
+        font-size: 24px !important;
+    }
+
+    .volunteer-right-div{
+        margin-top: 20px;
+    }
+
+    .volunteer-right-div button{
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+
+    .our-causes-title {
+        font-size: 30px !important;
+    }
+
+    .causes-card {
+        width: 22rem !important;
+        margin-bottom: 30px;
+    }
+
+    .latest-new-section-title {
+        font-size: 36px;
+    }
+
+    .causes-title{
+        font-size: 22px;
+    }
+
+    .cuases-desc{
+        font-size: 14px;
+    }
+
+    .causes-btn{
+        font-size: 14px;
+    }
+
+    .volunteer-title{
+        font-size: 34px !important;
+    }
+
+    .contact-us-title {
+        font-size: 35px !important;
+    }
+
+    .get-in-touch-text {
+        font-size: 28px !important;
+    }
+
+    .contact-info-text {
+        font-size: 28px !important;
+    }
+
+    .contact-form-title {
+        font-size: 30px;
+    }
+
+    .quick-links-text,
+    .footer-contact-info {
+        font-size: 20px;
+    }
+
+    .footer-links,
+    .footer-contact-info {
+        font-size: 14px;
+    }
+
+    .partner-text {
+        width: 100% !important;
+    }
+}
